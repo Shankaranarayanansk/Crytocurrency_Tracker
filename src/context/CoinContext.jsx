@@ -19,7 +19,7 @@ const CoinContextProvider = (props) => {
     };
 
     fetch(
-      `https://api.coingecko.com/api/v3/coins/markets?vs_currency=${currency.name}&order=market_cap_desc&per_page=1000&page=1&sparkline=false`,
+      `https://api.coingecko.com/api/v3/coins/markets?vs_currency=${currency.name}&order=market_cap_desc&per_page=12000&page=1&sparkline=false`,
       options
     )
       .then((response) => response.json())
